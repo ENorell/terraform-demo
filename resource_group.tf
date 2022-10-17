@@ -1,8 +1,4 @@
-resource "azurerm_resource_group" "terraform_rg" { #Rename to just azurerm_resource_group.terraform ?
-  name     = "terraform"                          # Would love to rename to terraform
+resource "azurerm_resource_group" "demo" {
+  name     = "norell-demo-resources"
   location = "westeurope"
-
-  lifecycle {
-    ignore_changes = [tags]
-  }
 }
